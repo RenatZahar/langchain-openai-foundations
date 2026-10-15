@@ -14,6 +14,8 @@ Verified on 2026-10-15 on Windows with a newly created Python 3.12.2 virtual env
 | Temporary JupyterLab shutdown | Passed; the verifier stops its own server |
 | Notebook language, syntax and outputs | English text; valid notebook/Markdown Python examples; outputs cleared |
 | Source preservation | Original learning notebooks were not edited |
+| Independent Git clone in a differently named folder containing spaces | Setup check, source checks and all seven fresh-kernel executions passed |
+| Credential handling | `.env` is ignored; only the empty `.env.example` is tracked |
 
 The fixtures exercise real LangChain agents and OpenAI SDK parsing while replacing
 HTTP responses. They cover streaming, structured output, two Python tool calls in
@@ -34,3 +36,6 @@ Fill in your own `.env` and run `scripts/check_setup.py` before trying API cells
 No paid OpenAI request was made during preparation.
 
 `requirements.lock.txt` records the complete clean verification environment.
+The relocation check reused that clean interpreter and its registered kernel;
+it loaded all course code and templates from the clone, without copying the
+original project's environment file. The blank `.env` was created from the clone's template.
