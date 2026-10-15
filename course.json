@@ -1,0 +1,16 @@
+{
+  "name": "LangChain OpenAI Foundations",
+  "language": "en",
+  "scope": "Adapted Module 1 of LangChain Academy Introduction to LangChain",
+  "python": ">=3.12,<3.14",
+  "kernel": "langchain-openai-foundations",
+  "notebooks": [
+    "notebooks/1.1_foundational_models_openai.ipynb",
+    "notebooks/1.1_prompting.ipynb",
+    "notebooks/1.2_tools.ipynb",
+    "notebooks/1.2_web_search.ipynb",
+    "notebooks/1.3_memory.ipynb",
+    "notebooks/1.4_multimodal_messages.ipynb",
+    "notebooks/1.5_personal_chef.ipynb"
+  ]
+}
