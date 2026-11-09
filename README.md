@@ -10,10 +10,10 @@ LangChain agents use LangGraph underneath; this is not the separate LangGraph co
 
 Install **Python 3.12** first. Git is optional if you download the repository as a ZIP.
 Copy/extract the whole repository into any folder, then open a terminal in that folder.
-If this repository has been published, you can also clone its URL:
+You can also clone the public repository:
 
 ```powershell
-git clone <repository-url> langchain-openai-foundations
+git clone https://github.com/RenatZahar/langchain-openai-foundations.git
 cd langchain-openai-foundations
 ```
 
